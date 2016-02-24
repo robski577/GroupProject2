@@ -11,14 +11,15 @@ import Foundation
 class Item {
     var Id: Int
     var Name: String
-    var Price: double_t
+    var Price: Double
     var Desc: String
     var TimeAddedToOrder: NSDate?
     var Menues: [Bool]
     
-    init(id: Int, name: String, desc: String, menues: [Bool]) {
+    init(id: Int, name: String, price: Double, desc: String, menues: [Bool]) {
         Id = id
         Name = name
+        Price = price
         Desc = desc
         Menues = menues
     }
