@@ -9,10 +9,11 @@
 import Foundation
 
 class Menu {
+    var currentMenuWindow: MenuType = .Dinner
     var Items = [Item]()
     
     func GetItemsForMenu() {
-        
+        Items = SQLLiteHelper.GetCurrentMenu(currentMenuWindow)
     }
 }
 
