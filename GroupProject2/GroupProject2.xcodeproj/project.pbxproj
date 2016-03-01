@@ -17,6 +17,7 @@
 		C9FF3A371C812E81005F7FD8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A361C812E81005F7FD8 /* MenuViewController.swift */; };
 		C9FF3A391C812E93005F7FD8 /* FloorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A381C812E93005F7FD8 /* FloorViewController.swift */; };
 		C9FF3A3B1C812EA5005F7FD8 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A3A1C812EA5005F7FD8 /* OrderViewController.swift */; };
+		C9FF3A3E1C813AF6005F7FD8 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A3D1C813AF6005F7FD8 /* MenuItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C9FF3A361C812E81005F7FD8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C9FF3A381C812E93005F7FD8 /* FloorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorViewController.swift; sourceTree = "<group>"; };
 		C9FF3A3A1C812EA5005F7FD8 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		C9FF3A3D1C813AF6005F7FD8 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				C9FF3A3C1C812F85005F7FD8 /* ViewControllers */,
 				81D17CD81C7D3D16004872EA /* AppDelegate.swift */,
 				81D17CDC1C7D3D16004872EA /* Main.storyboard */,
+				C9FF3A3D1C813AF6005F7FD8 /* MenuItemCell.swift */,
 				81D17CDF1C7D3D16004872EA /* Assets.xcassets */,
 				81D17CE11C7D3D16004872EA /* LaunchScreen.storyboard */,
 				81D17CE41C7D3D16004872EA /* Info.plist */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FF3A351C812E6D005F7FD8 /* AdminViewController.swift in Sources */,
+				C9FF3A3E1C813AF6005F7FD8 /* MenuItemCell.swift in Sources */,
 				C9FF3A391C812E93005F7FD8 /* FloorViewController.swift in Sources */,
 				C9FF3A371C812E81005F7FD8 /* MenuViewController.swift in Sources */,
 				C9FF3A3B1C812EA5005F7FD8 /* OrderViewController.swift in Sources */,
