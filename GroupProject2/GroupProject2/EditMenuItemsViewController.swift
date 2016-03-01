@@ -14,9 +14,9 @@ class EditMenuItemsViewController: UIViewController, UITableViewDataSource, UITa
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var editMenuTableView: UITableView!
     @IBOutlet weak var addItemButton: UIButton!
+    @IBOutlet weak var descTextField: UITextField!
     
     var items = []
-    @IBOutlet weak var descTextField: UITextField!
     var descriptions = []
     var prices = []
     var photos = [UIImage()]

@@ -8,7 +8,19 @@
 
 import UIKit
 
-class OrderViewController: UIViewController {
+class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var orderTableView: UITableView!
+    @IBOutlet weak var tableTextField: UITextField!
+    @IBOutlet weak var partySizeTextField: UITextField!
+    @IBOutlet weak var newOrderButton: UIButton!
+    
+    
+    var items = []
+    var descriptions = []
+    var prices = []
+    var photos = [UIImage()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +32,26 @@ class OrderViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.orderTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MenuItemCell
+        
+        cell.item.text = (items[indexPath.row] as! String)
+        cell.desc.text = (descriptions[indexPath.row] as! String)
+        cell.price.text = (prices[indexPath.row] as! String)
+        return cell
+    }
+    
+    @IBAction func getTable(sender: UITextField) {
+    }
+    
+    @IBAction func getPartySize(sender: UITextField) {
+    }
+
     
 
     /*
