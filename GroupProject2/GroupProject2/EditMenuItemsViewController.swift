@@ -10,9 +10,13 @@ import UIKit
 
 class EditMenuItemsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var editMenuTableView: UITableView!
+    @IBOutlet weak var addItemButton: UIButton!
     
     var items = []
+    @IBOutlet weak var descTextField: UITextField!
     var descriptions = []
     var prices = []
     var photos = [UIImage()]
@@ -27,6 +31,19 @@ class EditMenuItemsViewController: UIViewController, UITableViewDataSource, UITa
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //**USER INPUT**
+    @IBAction func getItem(sender: UITextField) {
+    }
+    
+    @IBAction func getPrice(sender: UITextField) {
+    }
+    
+    @IBAction func getDesc(sender: UITextField) {
+    }
+    
+    @IBAction func addNewMenuItem(sender: UIButton) {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
