@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Floor-->
@@ -26,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-1023" y="81"/>
         </scene>
-        <!--Admin-->
+        <!--Admin View Controller-->
         <scene sceneID="PiG-C3-2nR">
             <objects>
                 <viewController id="Raf-hs-FQs" customClass="AdminViewController" customModule="GroupProject2" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,13 +38,111 @@
                     <view key="view" contentMode="scaleToFill" id="jG6-Dc-9zG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.74758575898503765" green="1" blue="0.78152654511338471" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.8509070889261745" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Admin" image="admin" selectedImage="admin" id="FaN-sv-466"/>
+                    <navigationItem key="navigationItem" id="VUv-m8-qoh">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Edit Menu Items" id="6wH-bN-mod">
+                                <connections>
+                                    <segue destination="6y5-CR-D9B" kind="show" id="PfR-pf-wGV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Assign Servers" id="aev-J4-vsY">
+                                <connections>
+                                    <segue destination="cxy-OE-Spz" kind="show" id="TF1-SX-TqZ"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="assignServersButton" destination="aev-J4-vsY" id="ZNc-CO-KnK"/>
+                        <outlet property="editMenuItemsButton" destination="6wH-bN-mod" id="lGw-Yb-BEc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtg-vS-vaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-321" y="-105"/>
+            <point key="canvasLocation" x="534" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4TW-dI-eVO">
+            <objects>
+                <navigationController id="aBv-Q5-bsb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XYX-WP-0xL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6y-LG-4xl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="807"/>
+        </scene>
+        <!--Edit Menu Items View Controller-->
+        <scene sceneID="qdD-Tn-nkD">
+            <objects>
+                <viewController id="6y5-CR-D9B" customClass="EditMenuItemsViewController" customModule="GroupProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aqy-mI-h2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="buv-HH-ZwN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zeq-CE-e3y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Menu Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-wz-zWu">
+                                <rect key="frame" x="238" y="98" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xQh-wz-zWu" secondAttribute="height" multiplier="124:21" id="LUP-Bc-fEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oBp-nV-qeO">
+                                <rect key="frame" x="20" y="278" width="560" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oBp-nV-qeO" secondAttribute="height" multiplier="112:53" id="vTO-cE-250"/>
+                                    <constraint firstAttribute="height" constant="265" id="xab-ZU-Aoh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="6y5-CR-D9B" id="JQc-Vi-HyH"/>
+                                    <outlet property="delegate" destination="6y5-CR-D9B" id="l0b-Kq-Kt2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xQh-wz-zWu" firstAttribute="top" secondItem="aqy-mI-h2d" secondAttribute="bottom" constant="34" id="6x2-1w-ffa"/>
+                            <constraint firstItem="xQh-wz-zWu" firstAttribute="centerX" secondItem="Zeq-CE-e3y" secondAttribute="centerX" id="Lnl-lI-SHJ"/>
+                            <constraint firstItem="oBp-nV-qeO" firstAttribute="centerX" secondItem="Zeq-CE-e3y" secondAttribute="centerX" id="U2Q-VT-UN1"/>
+                            <constraint firstItem="buv-HH-ZwN" firstAttribute="top" secondItem="oBp-nV-qeO" secondAttribute="bottom" constant="8" id="qaM-Nv-fdp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editMenuTableView" destination="oBp-nV-qeO" id="3pW-bH-c2Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufm-zP-uMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="-229"/>
+        </scene>
+        <!--Assign Servers View Controller-->
+        <scene sceneID="QrR-kY-QnH">
+            <objects>
+                <viewController id="cxy-OE-Spz" customClass="AssignServersViewController" customModule="GroupProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2pC-nP-PmN"/>
+                        <viewControllerLayoutGuide type="bottom" id="iSz-Bz-LrG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B3x-WW-LmY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Jv-wBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="487"/>
         </scene>
         <!--Menu-->
         <scene sceneID="SEM-fS-odG">
@@ -66,10 +165,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TRh-Yr-0bE">
                                 <rect key="frame" x="20" y="81" width="560" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="TRh-Yr-0bE" secondAttribute="height" multiplier="56:47" id="5yW-df-vvY"/>
-                                    <constraint firstAttribute="width" constant="560" id="cXY-kO-W0m"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="0Pz-mT-KGM" customClass="MenuItemCell" customModule="GroupProject2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="120"/>
@@ -118,18 +213,12 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="desc" destination="suJ-i2-iln" id="g2m-PC-IDy"/>
-                                            <outlet property="description" destination="suJ-i2-iln" id="4zQ-Y1-ukI"/>
                                             <outlet property="item" destination="WqH-dy-8r2" id="HAU-Wt-Utm"/>
                                             <outlet property="photo" destination="xVk-7W-EKf" id="ADx-v7-AOV"/>
                                             <outlet property="price" destination="FZc-6H-iHk" id="EQO-fd-iPO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5yW-df-vvY"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="8MK-XJ-Xlv" id="fDZ-uE-8PF"/>
                                     <outlet property="delegate" destination="8MK-XJ-Xlv" id="pDv-vX-Tug"/>
@@ -208,12 +297,31 @@
                         <segue destination="AZm-bT-Vzd" kind="relationship" relationship="viewControllers" id="QWM-ow-kqT"/>
                         <segue destination="8MK-XJ-Xlv" kind="relationship" relationship="viewControllers" id="b2j-OI-d98"/>
                         <segue destination="BzE-gy-Tkd" kind="relationship" relationship="viewControllers" id="aDL-0U-Q3t"/>
-                        <segue destination="Raf-hs-FQs" kind="relationship" relationship="viewControllers" id="R5F-6u-n8E"/>
+                        <segue destination="kLY-VF-frf" kind="relationship" relationship="viewControllers" id="R5F-6u-n8E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08C-rn-Qiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1835" y="-629"/>
+        </scene>
+        <!--Admin-->
+        <scene sceneID="NKk-aI-dKd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kLY-VF-frf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Admin" image="admin" selectedImage="admin" id="FaN-sv-466"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Csb-oT-G1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Raf-hs-FQs" kind="relationship" relationship="rootViewController" id="wOq-av-FmE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbL-F6-h6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="-54"/>
         </scene>
     </scenes>
     <resources>

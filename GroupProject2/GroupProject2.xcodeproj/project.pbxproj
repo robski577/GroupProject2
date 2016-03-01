@@ -12,6 +12,8 @@
 		81D17CDE1C7D3D16004872EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D17CDC1C7D3D16004872EA /* Main.storyboard */; };
 		81D17CE01C7D3D16004872EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D17CDF1C7D3D16004872EA /* Assets.xcassets */; };
 		81D17CE31C7D3D16004872EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D17CE11C7D3D16004872EA /* LaunchScreen.storyboard */; };
+		C9EEFAD01C85559600CEED53 /* EditMenuItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEFACF1C85559600CEED53 /* EditMenuItemsViewController.swift */; };
+		C9EEFAD21C8555AF00CEED53 /* AssignServersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEFAD11C8555AF00CEED53 /* AssignServersViewController.swift */; };
 		C9FF3A331C812E43005F7FD8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A321C812E43005F7FD8 /* WelcomeViewController.swift */; };
 		C9FF3A351C812E6D005F7FD8 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A341C812E6D005F7FD8 /* AdminViewController.swift */; };
 		C9FF3A371C812E81005F7FD8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF3A361C812E81005F7FD8 /* MenuViewController.swift */; };
@@ -28,6 +30,8 @@
 		81D17CDF1C7D3D16004872EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81D17CE21C7D3D16004872EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81D17CE41C7D3D16004872EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EEFACF1C85559600CEED53 /* EditMenuItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMenuItemsViewController.swift; sourceTree = "<group>"; };
+		C9EEFAD11C8555AF00CEED53 /* AssignServersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssignServersViewController.swift; path = ../AssignServersViewController.swift; sourceTree = "<group>"; };
 		C9FF3A321C812E43005F7FD8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C9FF3A341C812E6D005F7FD8 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		C9FF3A361C812E81005F7FD8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		C9FF3A3C1C812F85005F7FD8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9EEFAD11C8555AF00CEED53 /* AssignServersViewController.swift */,
+				C9EEFACF1C85559600CEED53 /* EditMenuItemsViewController.swift */,
 				81D17CDA1C7D3D16004872EA /* ViewController.swift */,
 				C9FF3A321C812E43005F7FD8 /* WelcomeViewController.swift */,
 				C9FF3A341C812E6D005F7FD8 /* AdminViewController.swift */,
@@ -164,6 +170,8 @@
 				C9FF3A351C812E6D005F7FD8 /* AdminViewController.swift in Sources */,
 				C9FF3A3E1C813AF6005F7FD8 /* MenuItemCell.swift in Sources */,
 				C9FF3A391C812E93005F7FD8 /* FloorViewController.swift in Sources */,
+				C9EEFAD01C85559600CEED53 /* EditMenuItemsViewController.swift in Sources */,
+				C9EEFAD21C8555AF00CEED53 /* AssignServersViewController.swift in Sources */,
 				C9FF3A371C812E81005F7FD8 /* MenuViewController.swift in Sources */,
 				C9FF3A3B1C812EA5005F7FD8 /* OrderViewController.swift in Sources */,
 				81D17CDB1C7D3D16004872EA /* ViewController.swift in Sources */,

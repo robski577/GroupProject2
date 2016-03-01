@@ -1,21 +1,15 @@
 //
-//  AdminViewController.swift
+//  AssignServersViewController.swift
 //  GroupProject2
 //
-//  Created by Casey on 2/26/16.
+//  Created by Casey on 2/29/16.
 //  Copyright © 2016 Robert Masen. All rights reserved.
 //
 
 import UIKit
 
-class AdminViewController: UIViewController {
-    
-    
-   
-    @IBOutlet weak var editMenuItemsButton: UIBarButtonItem!
-    
-    @IBOutlet weak var assignServersButton: UIBarButtonItem!
-    
+class AssignServersViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

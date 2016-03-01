@@ -1,22 +1,22 @@
 //
-//  MenuViewController.swift
+//  EditMenuItemsViewController.swift
 //  GroupProject2
 //
-//  Created by Casey on 2/26/16.
+//  Created by Casey on 2/29/16.
 //  Copyright © 2016 Robert Masen. All rights reserved.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EditMenuItemsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet weak var editMenuTableView: UITableView!
     
-    
-    var items = ["Chef's Salad","Chocolate Milk Shake","Super Burger"]
-    var descriptions = ["You'll have to ask the chef. He's on break.","Mostly milk","Instead of buns, you get two mini pizzas!"]
-    var prices = ["7.95","5.00","12.95"]
+    var items = []
+    var descriptions = []
+    var prices = []
     var photos = [UIImage()]
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +34,15 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.menuTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MenuItemCell
-        
-        cell.item.text = items[indexPath.row]
-        cell.desc.text = descriptions[indexPath.row]
-        cell.price.text = prices[indexPath.row]
+        let cell = self.editMenuTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MenuItemCell
+//        
+        cell.item.text = (items[indexPath.row] as! String)
+        cell.desc.text = (descriptions[indexPath.row] as! String)
+        cell.price.text = (prices[indexPath.row] as! String)
         return cell
     }
+    
+    
     
 
     /*
