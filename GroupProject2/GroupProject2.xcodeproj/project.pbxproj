@@ -102,14 +102,13 @@
 				81D17CD81C7D3D16004872EA /* AppDelegate.swift */,
 				81D17CDC1C7D3D16004872EA /* Main.storyboard */,
 				818283531C7D3ED5002ED116 /* Menu.swift */,
-				818283551C7D3EDA002ED116 /* Table.swift */,
-				818283571C7D3EEA002ED116 /* Item.swift */,
 				818283591C7D3EF0002ED116 /* Order.swift */,
-				C9FF3A3D1C813AF6005F7FD8 /* MenuItemCell.swift */,
+				818283571C7D3EEA002ED116 /* Item.swift */,
+				818283551C7D3EDA002ED116 /* Table.swift */,
+				815C52861C86926200054ACB /* Server.swift */,
 				81D17CDF1C7D3D16004872EA /* Assets.xcassets */,
 				81D17CE11C7D3D16004872EA /* LaunchScreen.storyboard */,
 				81D17CE41C7D3D16004872EA /* Info.plist */,
-				815C52861C86926200054ACB /* Server.swift */,
 			);
 			path = GroupProject2;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 				C9FF3A381C812E93005F7FD8 /* FloorViewController.swift */,
 				C9FF3A3A1C812EA5005F7FD8 /* OrderViewController.swift */,
 				C948DC201C85729D00CFD6A5 /* NewOrderViewController.swift */,
+				C9FF3A3D1C813AF6005F7FD8 /* MenuItemCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
