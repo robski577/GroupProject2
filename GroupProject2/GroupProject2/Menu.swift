@@ -10,10 +10,15 @@ import Foundation
 
 class Menu {
     var currentMenuWindow: MenuType = .Dinner
-    var Items = [Item]()
+    var Apps = [Item]()
+    var Entre = [Item]()
+    var Dessert = [Item]()
+    var Drinks = [Item]()
     
     func GetItemsForMenu() {
-        Items = SQLLiteHelper.GetCurrentMenu(currentMenuWindow)
+//        for item in SQLHelper.GetItems() {
+//            
+//        }
     }
 }
 
