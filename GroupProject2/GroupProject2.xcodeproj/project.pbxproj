@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6CBAC496001AD68035905143 /* Pods_GroupProject2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE41600B039E8EAEE505EDD /* Pods_GroupProject2.framework */; };
+		815C52871C86926200054ACB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C52861C86926200054ACB /* Server.swift */; };
 		818283541C7D3ED5002ED116 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283531C7D3ED5002ED116 /* Menu.swift */; };
 		818283561C7D3EDA002ED116 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283551C7D3EDA002ED116 /* Table.swift */; };
 		818283581C7D3EEA002ED116 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283571C7D3EEA002ED116 /* Item.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5EE41600B039E8EAEE505EDD /* Pods_GroupProject2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupProject2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		815C52861C86926200054ACB /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		818283531C7D3ED5002ED116 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		818283551C7D3EDA002ED116 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		818283571C7D3EEA002ED116 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				81D17CDF1C7D3D16004872EA /* Assets.xcassets */,
 				81D17CE11C7D3D16004872EA /* LaunchScreen.storyboard */,
 				81D17CE41C7D3D16004872EA /* Info.plist */,
+				815C52861C86926200054ACB /* Server.swift */,
 			);
 			path = GroupProject2;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				81D17CDB1C7D3D16004872EA /* ViewController.swift in Sources */,
 				818283561C7D3EDA002ED116 /* Table.swift in Sources */,
 				81D17CD91C7D3D16004872EA /* AppDelegate.swift in Sources */,
+				815C52871C86926200054ACB /* Server.swift in Sources */,
 				C9FF3A331C812E43005F7FD8 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
