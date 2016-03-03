@@ -14,10 +14,10 @@ class Item {
     var Price: Double
     var Desc: String
     var TimeAddedToOrder: NSDate?
-    var Menues: MenuType
+    var Menues: UInt8
     var Type: ItemType
     
-    init(id: Int, name: String, price: Double, desc: String, menues: MenuType, type: ItemType) {
+    init(id: Int, name: String, price: Double, desc: String, menues: UInt8, type: ItemType) {
         Id = id
         Name = name
         Price = price
@@ -27,17 +27,18 @@ class Item {
     }
 }
 
-enum MenuType: Int {
-    case Nothing =      0
-    case Breakfast =    1
-    case Lunch =        2
-    case HappyHour =    4
-    case Dinner =       8
+enum MenuType: UInt8 {
+    case Nothing =      0b0000
+    case Breakfast =    0b1000
+    case Lunch =        0b0100
+    case HappyHour =    0b0010
+    case Dinner =       0b0001
 }
 
 enum ItemType: Int {
     case Nothing =      0
     case Apps =         1
     case Entre =        2
-    case Desert =       4
+    case Dessert =      4
+    case Drinks =       8
 }

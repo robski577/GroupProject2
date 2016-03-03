@@ -9,16 +9,33 @@
 import Foundation
 
 class Menu {
-    var currentMenuWindow: MenuType = .Dinner
+    var currentMenuWindow: UInt8 = MenuType.Dinner.rawValue | MenuType.HappyHour.rawValue
     var Apps = [Item]()
     var Entre = [Item]()
     var Dessert = [Item]()
     var Drinks = [Item]()
     
     func GetItemsForMenu() {
-//        for item in SQLHelper.GetItems() {
-//            
-//        }
+        for item in SQLhelper.GetItems() {
+            if item.Menues == currentMenuWindow {
+                switch item.Type {
+                case .Apps:
+                    Apps.append(item)
+                    break
+                case .Entre:
+                    Entre.append(item)
+                    break
+                case .Dessert:
+                    Dessert.append(item)
+                    break
+                case .Drinks:
+                    Drinks.append(item)
+                    break
+                default:
+                    break
+                }
+            }
+        }
     }
 }
 

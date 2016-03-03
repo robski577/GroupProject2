@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6CBAC496001AD68035905143 /* Pods_GroupProject2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE41600B039E8EAEE505EDD /* Pods_GroupProject2.framework */; };
 		815C52871C86926200054ACB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C52861C86926200054ACB /* Server.swift */; };
+		815C52891C869B9900054ACB /* SQLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C52881C869B9900054ACB /* SQLHelper.swift */; };
 		818283541C7D3ED5002ED116 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283531C7D3ED5002ED116 /* Menu.swift */; };
 		818283561C7D3EDA002ED116 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283551C7D3EDA002ED116 /* Table.swift */; };
 		818283581C7D3EEA002ED116 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818283571C7D3EEA002ED116 /* Item.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		5EE41600B039E8EAEE505EDD /* Pods_GroupProject2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupProject2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		815C52861C86926200054ACB /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		815C52881C869B9900054ACB /* SQLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLHelper.swift; sourceTree = "<group>"; };
 		818283531C7D3ED5002ED116 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		818283551C7D3EDA002ED116 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		818283571C7D3EEA002ED116 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				81D17CD81C7D3D16004872EA /* AppDelegate.swift */,
 				81D17CDC1C7D3D16004872EA /* Main.storyboard */,
 				818283531C7D3ED5002ED116 /* Menu.swift */,
+				815C52881C869B9900054ACB /* SQLHelper.swift */,
 				818283591C7D3EF0002ED116 /* Order.swift */,
 				818283571C7D3EEA002ED116 /* Item.swift */,
 				818283551C7D3EDA002ED116 /* Table.swift */,
@@ -264,6 +267,7 @@
 				818283581C7D3EEA002ED116 /* Item.swift in Sources */,
 				818283541C7D3ED5002ED116 /* Menu.swift in Sources */,
 				C9FF3A351C812E6D005F7FD8 /* AdminViewController.swift in Sources */,
+				815C52891C869B9900054ACB /* SQLHelper.swift in Sources */,
 				C9FF3A3E1C813AF6005F7FD8 /* MenuItemCell.swift in Sources */,
 				C9FF3A391C812E93005F7FD8 /* FloorViewController.swift in Sources */,
 				C9EEFAD01C85559600CEED53 /* EditMenuItemsViewController.swift in Sources */,
